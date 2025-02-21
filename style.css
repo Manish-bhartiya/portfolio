@@ -218,17 +218,28 @@ body {
 }
 
 .image-container {
-    border-radius: 10px;
+    color: #64ffda; /* Keeping text color similar */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #64ffda; /* Border similar to button */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px; /* Padding for spacing */
+    font-family: 'Inter', sans-serif; /* Matching font */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    font-size: 15px;
+    position: relative;
     overflow: hidden;
+    cursor: pointer;
     height: 300px;
-    border: 2px solid #64ffda;
-    padding: 5px;
-    transition: transform 0.3s ease-in-out;
+
+    /* Shadow only on bottom-right */
+    box-shadow: 10px 10px 15px rgba(100, 255, 218, 0.5);
 }
 
 .image-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight hover effect */
+    box-shadow: 15px 15px 20px rgba(100, 255, 218, 0.8); /* Stronger shadow on hover */
 }
+
 
 .image-container img {
     width: 100%;
